@@ -1,0 +1,133 @@
+# Meridian — treatment pack, drupal-design-lab
+#
+# Self-contained art direction intended for inclusion in the Design Lab build
+# prompt alongside the chosen Drupal CMS, site template, and recipes. The
+# treatment may strongly reshape the visible expression while the selected Look
+# keeps its required routes, Drupal-owned data, functionality, accessibility,
+# permissions, and editor outcomes.
+#
+# To make a new pack: copy this file, change the id and values, then check
+# contrast with: python3 packs/tools/check.py
+
+format: design-treatment-pack/v1
+id: meridian
+name: Meridian
+category: Institutional trust
+summary: >-
+  Navy, serif authority, and disciplined space. A plainspoken sans does the working text; a
+  serious serif holds the headlines; gold appears the way it does on a building plaque — small,
+  occasional, earned.
+fit: >-
+  Finance, legal, healthcare systems, government, higher education, B2B services.
+
+# The rules that make the combination work. Hold these relationships if you
+# recolor a clone: keep each role's lightness, the contrast floor, and how
+# many saturated hues exist and which roles they may occupy.
+formula: >-
+  Cool near-white field + deep desaturated-blue ink + a darker blue reserved for action + a
+  small metallic used only decoratively; serif display over a plainspoken sans; minimal radius,
+  near-flat.
+
+color:
+  background: "#FAFAF7"   # page field
+  surface: "#FFFFFF"   # cards, panels, raised content
+  surface_alt: "#EEF1F4"   # tinted bands, alternating sections
+  ink: "#1B2A41"   # primary text
+  ink_muted: "#51617A"   # secondary text, captions
+  line: "#D8DEE6"   # borders, dividers, rules
+  primary: "#17457F"   # main action fill
+  on_primary: "#FFFFFF"   # text/icons on primary fills
+  accent: "#A87F2E"   # secondary emphasis; decorative unless it passes 4.5:1 as text
+  inverse_background: "#10233F"   # flipped bands: footers, CTA strips
+  inverse_ink: "#E9EEF5"   # text on the flipped band
+  focus: "#17457F"   # focus ring
+  focus_inverse: "#E9EEF5"   # focus ring on inverse_background
+
+type:
+  display:
+    family: "Source Serif 4"
+    stack: "'Source Serif 4', Georgia, serif"
+    weight: 600
+    tracking: "0"
+  body:
+    family: "Libre Franklin"
+    stack: "'Libre Franklin', 'Segoe UI', Helvetica, sans-serif"
+    weight: 400
+    bold_weight: 600
+  meta: null
+  source: google-fonts
+  scale_px:
+    display: 54
+    h1: 40
+    h2: 28
+    h3: 20
+    body: 17
+    meta: 13
+  kicker:
+    case: upper
+    tracking: "0.06em"
+
+shape:
+  radius_px: 4
+  button_radius_px: 4
+  border_width_px: 1
+  card_shadow: "none"
+  button_shadow: "none"
+  note: >-
+    Radius 4px. Prefer borders to shadows; a minimal cool shadow is allowed on sticky elements
+    only.
+
+motion:
+  duration_ms: 150
+  easing: "ease"
+  hover: none
+  reduced_motion: honor
+  note: >-
+    Restrained 150ms. No parallax.
+
+rhythm:
+  base_unit_px: 8
+  content_width_px: 1060   # starting guidance; treatment and content may reshape it
+  section_gap_px: 104
+  note: >-
+    Measured — comfortable but never airy for its own sake. Strong lead paragraphs after
+    headings.
+
+imagery: >-
+  Documentary and architectural photography with a cool grade. Candid over staged; no stock
+  handshakes.
+voice: >-
+  Precise, third person, credential-forward.
+
+apply:
+  contrast_floor: "ink >= 7:1 on background, surface, and surface_alt; ink_muted >= 4.5:1 on background, surface, and surface_alt; on_primary >= 4.5:1 on primary; inverse_ink >= 4.5:1 on inverse_background; focus roles >= 3:1 on their surfaces; colors below 4.5:1 as text are decorative-only"
+  rules:
+    - >-
+      Let this treatment fully direct the visible expression — color, type, spacing, density,
+      layout, section composition, component styling, imagery treatment, and non-essential
+      motion — overriding conflicting visual defaults from the selected Look. Preserve required
+      routes and information architecture, Drupal-owned data and relationships, recurring-content
+      ownership, functionality and state behavior, accessibility, permissions/workflows, and
+      editor outcomes. Do not replace structured Drupal surfaces with hard-coded markup to make
+      the treatment fit.
+    - >-
+      Map the color roles onto the host theme's token system (theme CSS variables, SDC props,
+      Canvas style options); only create new root custom properties if the host has none.
+    - >-
+      Load the Google Fonts with the listed weights only; the stacks given are the offline
+      fallback.
+    - >-
+      Keep the page to these hues. Tints of these values are acceptable for charts and states;
+      do not introduce new saturated colors.
+    - >-
+      Re-verify after mapping: ink >= 7:1 and ink_muted >= 4.5:1 on background,
+      surface, and surface_alt; on_primary and inverse_ink >= 4.5:1 on their fills; focus and
+      focus_inverse >= 3:1 on the surfaces where they appear. A color below 4.5:1 as text is
+      decorative only. Never carry meaning by color alone.
+    - >-
+      Treat fit as catalog guidance, not project scope. Apply imagery, motion, and voice only to
+      new material when compatible with the brief; never change the site subject, facts, taxonomy,
+      routes, maintained content, or media roles to make the treatment fit.
+    - >-
+      Explicit customer direction overrides the treatment; the treatment overrides the Look's
+      visual defaults; the Look's nonvisual requirements remain binding.

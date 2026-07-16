@@ -1,0 +1,132 @@
+# Trust Blue — treatment pack, drupal-design-lab
+#
+# Self-contained art direction intended for inclusion in the Design Lab build
+# prompt alongside the chosen Drupal CMS, site template, and recipes. The
+# treatment may strongly reshape the visible expression while the selected Look
+# keeps its required routes, Drupal-owned data, functionality, accessibility,
+# permissions, and editor outcomes.
+#
+# To make a new pack: copy this file, change the id and values, then check
+# contrast with: python3 packs/tools/check.py
+
+format: design-treatment-pack/v1
+id: trust_blue
+name: Trust Blue
+category: Corporate trust
+summary: >-
+  The most common corporate palette on the web: dependable blue, cool grays, Montserrat headings
+  over Open Sans body.
+fit: >-
+  Banks, insurers, B2B services, healthcare admin, anywhere credibility beats personality.
+
+# The rules that make the combination work. Hold these relationships if you
+# recolor a clone: keep each role's lightness, the contrast floor, and how
+# many saturated hues exist and which roles they may occupy.
+formula: >-
+  Cool near-white field + deep desaturated-blue ink + one dependable mid-blue carrying the
+  actions + a single quiet support hue; geometric sans display over a neutral sans body; small
+  radius, one-step shadows, tidy symmetry.
+
+color:
+  background: "#FFFFFF"   # page field
+  surface: "#FFFFFF"   # cards, panels, raised content
+  surface_alt: "#F3F6FB"   # tinted bands, alternating sections
+  ink: "#1B2B48"   # primary text
+  ink_muted: "#54627C"   # secondary text, captions
+  line: "#DBE3EF"   # borders, dividers, rules
+  primary: "#1D55C4"   # main action fill
+  on_primary: "#FFFFFF"   # text/icons on primary fills
+  accent: "#0E7A5F"   # secondary emphasis; decorative unless it passes 4.5:1 as text
+  inverse_background: "#1B2B48"   # flipped bands: footers, CTA strips
+  inverse_ink: "#EDF2FA"   # text on the flipped band
+  focus: "#1D55C4"   # focus ring
+  focus_inverse: "#EDF2FA"   # focus ring on inverse_background
+
+type:
+  display:
+    family: "Montserrat"
+    stack: "'Montserrat', 'Trebuchet MS', 'Segoe UI', sans-serif"
+    weight: 700
+    tracking: "-0.02em"
+  body:
+    family: "Open Sans"
+    stack: "'Open Sans', 'Segoe UI', Verdana, sans-serif"
+    weight: 400
+    bold_weight: 600
+  meta: null
+  source: google-fonts
+  scale_px:
+    display: 52
+    h1: 40
+    h2: 28
+    h3: 20
+    body: 16
+    meta: 13
+  kicker:
+    case: upper
+    tracking: "0.1em"
+
+shape:
+  radius_px: 8
+  button_radius_px: 8
+  border_width_px: 1
+  card_shadow: "0 1px 3px rgba(27,43,72,0.08)"
+  button_shadow: "none"
+  note: >-
+    8px corners, one-step shadows, white cards on a cool blue-gray ground. Tidy, symmetric,
+    nothing experimental.
+
+motion:
+  duration_ms: 150
+  easing: "ease"
+  hover: lift
+  reduced_motion: honor
+  note: >-
+    150ms ease on links, buttons, and cards. Motion confirms; it never entertains.
+
+rhythm:
+  base_unit_px: 8
+  content_width_px: 1140   # starting guidance; treatment and content may reshape it
+  section_gap_px: 88
+  note: >-
+    8px base, 1140px content, 88px sections. Medium density; three-up card grids and centered
+    section headings.
+
+imagery: >-
+  Real branches, real staff, natural light. People mid-conversation, not pointing at laptops.
+voice: >-
+  Plain, direct, and warm. Rates and terms stated up front; no asterisks doing the heavy
+  lifting.
+
+apply:
+  contrast_floor: "ink >= 7:1 on background, surface, and surface_alt; ink_muted >= 4.5:1 on background, surface, and surface_alt; on_primary >= 4.5:1 on primary; inverse_ink >= 4.5:1 on inverse_background; focus roles >= 3:1 on their surfaces; colors below 4.5:1 as text are decorative-only"
+  rules:
+    - >-
+      Let this treatment fully direct the visible expression — color, type, spacing, density,
+      layout, section composition, component styling, imagery treatment, and non-essential
+      motion — overriding conflicting visual defaults from the selected Look. Preserve required
+      routes and information architecture, Drupal-owned data and relationships, recurring-content
+      ownership, functionality and state behavior, accessibility, permissions/workflows, and
+      editor outcomes. Do not replace structured Drupal surfaces with hard-coded markup to make
+      the treatment fit.
+    - >-
+      Map the color roles onto the host theme's token system (theme CSS variables, SDC props,
+      Canvas style options); only create new root custom properties if the host has none.
+    - >-
+      Load the Google Fonts with the listed weights only; the stacks given are the offline
+      fallback.
+    - >-
+      Keep the page to these hues. Tints of these values are acceptable for charts and states;
+      do not introduce new saturated colors.
+    - >-
+      Re-verify after mapping: ink >= 7:1 and ink_muted >= 4.5:1 on background,
+      surface, and surface_alt; on_primary and inverse_ink >= 4.5:1 on their fills; focus and
+      focus_inverse >= 3:1 on the surfaces where they appear. A color below 4.5:1 as text is
+      decorative only. Never carry meaning by color alone.
+    - >-
+      Treat fit as catalog guidance, not project scope. Apply imagery, motion, and voice only to
+      new material when compatible with the brief; never change the site subject, facts, taxonomy,
+      routes, maintained content, or media roles to make the treatment fit.
+    - >-
+      Explicit customer direction overrides the treatment; the treatment overrides the Look's
+      visual defaults; the Look's nonvisual requirements remain binding.

@@ -1,0 +1,130 @@
+# Atelier — treatment pack, drupal-design-lab
+#
+# Self-contained art direction intended for inclusion in the Design Lab build
+# prompt alongside the chosen Drupal CMS, site template, and recipes. The
+# treatment may strongly reshape the visible expression while the selected Look
+# keeps its required routes, Drupal-owned data, functionality, accessibility,
+# permissions, and editor outcomes.
+#
+# To make a new pack: copy this file, change the id and values, then check
+# contrast with: python3 packs/tools/check.py
+
+format: design-treatment-pack/v1
+id: atelier
+name: Atelier
+category: Refined luxury
+summary: >-
+  Ivory, ink, and a whisper of bronze. Tiny letterspaced labels against enormous light serifs;
+  action is ink set in caps; bronze appears on numerals, rules, and hovers, never as a field.
+fit: >-
+  Hospitality, fashion, galleries, fine dining, high-end real estate, weddings.
+
+# The rules that make the combination work. Hold these relationships if you
+# recolor a clone: keep each role's lightness, the contrast floor, and how
+# many saturated hues exist and which roles they may occupy.
+formula: >-
+  Ivory field + near-black ink serving as the action color + one metallic whisper; high-contrast
+  garalde display over letterspaced geometric caps; radius near 0, hairlines, zero elevation.
+
+color:
+  background: "#F6F2EA"   # page field
+  surface: "#FDFBF6"   # cards, panels, raised content
+  surface_alt: "#ECE5D8"   # tinted bands, alternating sections
+  ink: "#1C1814"   # primary text
+  ink_muted: "#6D655B"   # secondary text, captions
+  line: "#D9D0C0"   # borders, dividers, rules
+  primary: "#1C1814"   # main action fill
+  on_primary: "#F6F2EA"   # text/icons on primary fills
+  accent: "#8A6330"   # secondary emphasis; decorative unless it passes 4.5:1 as text
+  inverse_background: "#171310"   # flipped bands: footers, CTA strips
+  inverse_ink: "#F6F2EA"   # text on the flipped band
+  focus: "#8A6330"   # focus ring
+  focus_inverse: "#F6F2EA"   # focus ring on inverse_background
+
+type:
+  display:
+    family: "Cormorant Garamond"
+    stack: "'Cormorant Garamond', Garamond, 'Times New Roman', serif"
+    weight: 500
+    tracking: "0"
+  body:
+    family: "Montserrat"
+    stack: "'Montserrat', 'Trebuchet MS', 'Segoe UI', sans-serif"
+    weight: 400
+    bold_weight: 500
+  meta: null
+  source: google-fonts
+  scale_px:
+    display: 56
+    h1: 40
+    h2: 28
+    h3: 20
+    body: 16
+    meta: 13
+  kicker:
+    case: upper
+    tracking: "0.14em"
+
+shape:
+  radius_px: 2
+  button_radius_px: 2
+  border_width_px: 1
+  card_shadow: "none"
+  button_shadow: "none"
+  note: >-
+    Radius 0–2px. No shadows — whitespace and hairlines are the ornament. Dramatic size jumps
+    between label and display.
+
+motion:
+  duration_ms: 350
+  easing: "ease"
+  hover: none
+  reduced_motion: honor
+  note: >-
+    Slow 300–400ms fades; one letter-reveal allowed on the hero, nowhere else.
+
+rhythm:
+  base_unit_px: 8
+  content_width_px: 1020   # starting guidance; treatment and content may reshape it
+  section_gap_px: 136
+  note: >-
+    Very airy. Centered compositions tolerated. Few things per view, each given room.
+
+imagery: >-
+  Full-bleed editorial photography, muted warm grade, generous negative space; product on
+  neutral seamless.
+voice: >-
+  Spare and assured. No exclamation points.
+
+apply:
+  contrast_floor: "ink >= 7:1 on background, surface, and surface_alt; ink_muted >= 4.5:1 on background, surface, and surface_alt; on_primary >= 4.5:1 on primary; inverse_ink >= 4.5:1 on inverse_background; focus roles >= 3:1 on their surfaces; colors below 4.5:1 as text are decorative-only"
+  rules:
+    - >-
+      Let this treatment fully direct the visible expression — color, type, spacing, density,
+      layout, section composition, component styling, imagery treatment, and non-essential
+      motion — overriding conflicting visual defaults from the selected Look. Preserve required
+      routes and information architecture, Drupal-owned data and relationships, recurring-content
+      ownership, functionality and state behavior, accessibility, permissions/workflows, and
+      editor outcomes. Do not replace structured Drupal surfaces with hard-coded markup to make
+      the treatment fit.
+    - >-
+      Map the color roles onto the host theme's token system (theme CSS variables, SDC props,
+      Canvas style options); only create new root custom properties if the host has none.
+    - >-
+      Load the Google Fonts with the listed weights only; the stacks given are the offline
+      fallback.
+    - >-
+      Keep the page to these hues. Tints of these values are acceptable for charts and states;
+      do not introduce new saturated colors.
+    - >-
+      Re-verify after mapping: ink >= 7:1 and ink_muted >= 4.5:1 on background,
+      surface, and surface_alt; on_primary and inverse_ink >= 4.5:1 on their fills; focus and
+      focus_inverse >= 3:1 on the surfaces where they appear. A color below 4.5:1 as text is
+      decorative only. Never carry meaning by color alone.
+    - >-
+      Treat fit as catalog guidance, not project scope. Apply imagery, motion, and voice only to
+      new material when compatible with the brief; never change the site subject, facts, taxonomy,
+      routes, maintained content, or media roles to make the treatment fit.
+    - >-
+      Explicit customer direction overrides the treatment; the treatment overrides the Look's
+      visual defaults; the Look's nonvisual requirements remain binding.

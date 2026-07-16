@@ -1,0 +1,134 @@
+# Newsprint — treatment pack, drupal-design-lab
+#
+# Self-contained art direction intended for inclusion in the Design Lab build
+# prompt alongside the chosen Drupal CMS, site template, and recipes. The
+# treatment may strongly reshape the visible expression while the selected Look
+# keeps its required routes, Drupal-owned data, functionality, accessibility,
+# permissions, and editor outcomes.
+#
+# To make a new pack: copy this file, change the id and values, then check
+# contrast with: python3 packs/tools/check.py
+
+format: design-treatment-pack/v1
+id: newsprint
+name: Newsprint
+category: News editorial
+summary: >-
+  Ink on newsprint with a red pencil: flat paper everywhere, containers drawn in rules, a
+  marker-yellow highlight for selection only, Newsreader carrying display and body under Oswald
+  kickers.
+fit: >-
+  News, magazines, newsletters, research organizations, universities, serious blogs.
+
+# The rules that make the combination work. Hold these relationships if you
+# recolor a clone: keep each role's lightness, the contrast floor, and how
+# many saturated hues exist and which roles they may occupy.
+formula: >-
+  Newsprint field + near-black ink + an editor's red + a marker-yellow highlight; one serif
+  family carrying both display and body, condensed caps for kickers; rules instead of boxes,
+  radius 0.
+
+color:
+  background: "#F8F6EF"   # page field
+  surface: "#F8F6EF"   # cards, panels, raised content
+  surface_alt: "#EFECE1"   # tinted bands, alternating sections
+  ink: "#191817"   # primary text
+  ink_muted: "#5B5850"   # secondary text, captions
+  line: "#191817"   # borders, dividers, rules
+  primary: "#B3261E"   # main action fill
+  on_primary: "#FFFFFF"   # text/icons on primary fills
+  accent: "#F7E463"   # secondary emphasis; decorative unless it passes 4.5:1 as text
+  inverse_background: "#191817"   # flipped bands: footers, CTA strips
+  inverse_ink: "#F8F6EF"   # text on the flipped band
+  focus: "#B3261E"   # focus ring
+  focus_inverse: "#F8F6EF"   # focus ring on inverse_background
+
+type:
+  display:
+    family: "Newsreader"
+    stack: "'Newsreader', Georgia, 'Times New Roman', serif"
+    weight: 600
+    tracking: "0"
+  body:
+    family: "Newsreader"
+    stack: "'Newsreader', Georgia, 'Times New Roman', serif"
+    weight: 400
+    bold_weight: 600
+  meta:
+    family: "Oswald"
+    stack: "'Oswald', 'Arial Narrow', sans-serif"
+  source: google-fonts
+  scale_px:
+    display: 60
+    h1: 42
+    h2: 30
+    h3: 20
+    body: 17
+    meta: 13
+  kicker:
+    case: upper
+    tracking: "0.1em"
+
+shape:
+  radius_px: 0
+  button_radius_px: 0
+  border_width_px: 1
+  card_shadow: "none"
+  button_shadow: "none"
+  note: >-
+    Radius 0. No shadows; containers drawn with 1px rules, column hairlines in a lighter tint.
+    Drop caps allowed on features; captions and credit lines mandatory under images.
+
+motion:
+  duration_ms: 100
+  easing: "linear"
+  hover: none
+  reduced_motion: honor
+  note: >-
+    None beyond opacity. The page behaves like paper.
+
+rhythm:
+  base_unit_px: 8
+  content_width_px: 1160   # starting guidance; treatment and content may reshape it
+  section_gap_px: 80
+  note: >-
+    Dense multi-column on desktop, honest single column on mobile. Datelines and section labels
+    everywhere.
+
+imagery: >-
+  Photojournalistic, black-and-white or muted color, always captioned and credited.
+voice: >-
+  Reported. Active verbs, headline case, no marketing adjectives.
+
+apply:
+  contrast_floor: "ink >= 7:1 on background, surface, and surface_alt; ink_muted >= 4.5:1 on background, surface, and surface_alt; on_primary >= 4.5:1 on primary; inverse_ink >= 4.5:1 on inverse_background; focus roles >= 3:1 on their surfaces; colors below 4.5:1 as text are decorative-only"
+  rules:
+    - >-
+      Let this treatment fully direct the visible expression — color, type, spacing, density,
+      layout, section composition, component styling, imagery treatment, and non-essential
+      motion — overriding conflicting visual defaults from the selected Look. Preserve required
+      routes and information architecture, Drupal-owned data and relationships, recurring-content
+      ownership, functionality and state behavior, accessibility, permissions/workflows, and
+      editor outcomes. Do not replace structured Drupal surfaces with hard-coded markup to make
+      the treatment fit.
+    - >-
+      Map the color roles onto the host theme's token system (theme CSS variables, SDC props,
+      Canvas style options); only create new root custom properties if the host has none.
+    - >-
+      Load the Google Fonts with the listed weights only; the stacks given are the offline
+      fallback.
+    - >-
+      Keep the page to these hues. Tints of these values are acceptable for charts and states;
+      do not introduce new saturated colors.
+    - >-
+      Re-verify after mapping: ink >= 7:1 and ink_muted >= 4.5:1 on background,
+      surface, and surface_alt; on_primary and inverse_ink >= 4.5:1 on their fills; focus and
+      focus_inverse >= 3:1 on the surfaces where they appear. A color below 4.5:1 as text is
+      decorative only. Never carry meaning by color alone.
+    - >-
+      Treat fit as catalog guidance, not project scope. Apply imagery, motion, and voice only to
+      new material when compatible with the brief; never change the site subject, facts, taxonomy,
+      routes, maintained content, or media roles to make the treatment fit.
+    - >-
+      Explicit customer direction overrides the treatment; the treatment overrides the Look's
+      visual defaults; the Look's nonvisual requirements remain binding.

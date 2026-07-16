@@ -1,0 +1,1 @@
+"""Treatment catalog regression tests."""

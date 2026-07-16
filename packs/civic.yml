@@ -1,0 +1,136 @@
+# Civic — treatment pack, drupal-design-lab
+#
+# Self-contained art direction intended for inclusion in the Design Lab build
+# prompt alongside the chosen Drupal CMS, site template, and recipes. The
+# treatment may strongly reshape the visible expression while the selected Look
+# keeps its required routes, Drupal-owned data, functionality, accessibility,
+# permissions, and editor outcomes.
+#
+# To make a new pack: copy this file, change the id and values, then check
+# contrast with: python3 packs/tools/check.py
+
+format: design-treatment-pack/v1
+id: civic
+name: Civic
+category: Accessible utility
+summary: >-
+  Color-safe utility: white field, one AAA action blue used for actions and focus, gold reserved
+  for secondary emphasis, Public Sans in every role. Chosen for legibility, not fashion — and
+  modern because of it.
+fit: >-
+  Government and civic services, public utilities, institutional portals, anything where
+  completing the task is the brand.
+
+# The rules that make the combination work. Hold these relationships if you
+# recolor a clone: keep each role's lightness, the contrast floor, and how
+# many saturated hues exist and which roles they may occupy.
+formula: >-
+  White field + neutral gray ramp + one AAA-contrast action and focus blue + a high-visibility
+  gold accent; a single utilitarian sans in every role; flat surfaces, visible input borders,
+  motion near zero.
+
+color:
+  background: "#FFFFFF"   # page field
+  surface: "#FFFFFF"   # cards, panels, raised content
+  surface_alt: "#F3F4F6"   # tinted bands, alternating sections
+  ink: "#111827"   # primary text
+  ink_muted: "#4B5563"   # secondary text, captions
+  line: "#D1D5DB"   # borders, dividers, rules
+  primary: "#005EA2"   # main action fill
+  on_primary: "#FFFFFF"   # text/icons on primary fills
+  accent: "#FFBE2E"   # secondary emphasis; decorative unless it passes 4.5:1 as text
+  inverse_background: "#112E51"   # flipped bands: footers, CTA strips
+  inverse_ink: "#FFFFFF"   # text on the flipped band
+  focus: "#005EA2"   # focus ring
+  focus_inverse: "#FFFFFF"   # focus ring on inverse_background
+
+type:
+  display:
+    family: "Public Sans"
+    stack: "'Public Sans', 'Segoe UI', Helvetica, sans-serif"
+    weight: 700
+    tracking: "-0.01em"
+  body:
+    family: "Public Sans"
+    stack: "'Public Sans', 'Segoe UI', Helvetica, sans-serif"
+    weight: 400
+    bold_weight: 700
+  meta: null
+  source: google-fonts
+  scale_px:
+    display: 48
+    h1: 36
+    h2: 28
+    h3: 20
+    body: 17
+    meta: 14
+  kicker:
+    case: upper
+    tracking: "0.08em"
+
+shape:
+  radius_px: 4
+  button_radius_px: 4
+  border_width_px: 1
+  card_shadow: "none"
+  button_shadow: "none"
+  note: >-
+    Flat, 4px corners, visible 1px borders on every input. Blue focus clears non-text contrast
+    across every light surface; focus_inverse stays white on navy. Nothing decorative stands
+    between the user and the form.
+
+motion:
+  duration_ms: 120
+  easing: "ease"
+  hover: none
+  reduced_motion: honor
+  note: >-
+    Little to none; state changes are instant and obvious. Focus visibility outranks elegance.
+
+rhythm:
+  base_unit_px: 8
+  content_width_px: 1080   # starting guidance; treatment and content may reshape it
+  section_gap_px: 80
+  note: >-
+    8px base, 1080px content, 80px sections. Forms and reading measure first; moderate density
+    so nothing competes with the task.
+
+imagery: >-
+  Real places and counters staffed by real people; diagrams flat, labeled, and captioned. No
+  hero photography for decoration's sake.
+voice: >-
+  Plain language, eighth-grade reading level. Second person, active voice, one idea per
+  sentence.
+
+apply:
+  contrast_floor: "ink >= 7:1 on background, surface, and surface_alt; ink_muted >= 4.5:1 on background, surface, and surface_alt; on_primary >= 4.5:1 on primary; inverse_ink >= 4.5:1 on inverse_background; focus roles >= 3:1 on their surfaces; colors below 4.5:1 as text are decorative-only"
+  rules:
+    - >-
+      Let this treatment fully direct the visible expression — color, type, spacing, density,
+      layout, section composition, component styling, imagery treatment, and non-essential
+      motion — overriding conflicting visual defaults from the selected Look. Preserve required
+      routes and information architecture, Drupal-owned data and relationships, recurring-content
+      ownership, functionality and state behavior, accessibility, permissions/workflows, and
+      editor outcomes. Do not replace structured Drupal surfaces with hard-coded markup to make
+      the treatment fit.
+    - >-
+      Map the color roles onto the host theme's token system (theme CSS variables, SDC props,
+      Canvas style options); only create new root custom properties if the host has none.
+    - >-
+      Load the Google Fonts with the listed weights only; the stacks given are the offline
+      fallback.
+    - >-
+      Keep the page to these hues. Tints of these values are acceptable for charts and states;
+      do not introduce new saturated colors.
+    - >-
+      Re-verify after mapping: ink >= 7:1 and ink_muted >= 4.5:1 on background,
+      surface, and surface_alt; on_primary and inverse_ink >= 4.5:1 on their fills; focus and
+      focus_inverse >= 3:1 on the surfaces where they appear. A color below 4.5:1 as text is
+      decorative only. Never carry meaning by color alone.
+    - >-
+      Treat fit as catalog guidance, not project scope. Apply imagery, motion, and voice only to
+      new material when compatible with the brief; never change the site subject, facts, taxonomy,
+      routes, maintained content, or media roles to make the treatment fit.
+    - >-
+      Explicit customer direction overrides the treatment; the treatment overrides the Look's
+      visual defaults; the Look's nonvisual requirements remain binding.

@@ -1,0 +1,134 @@
+# Hot Circuit — treatment pack, drupal-design-lab
+#
+# Self-contained art direction intended for inclusion in the Design Lab build
+# prompt alongside the chosen Drupal CMS, site template, and recipes. The
+# treatment may strongly reshape the visible expression while the selected Look
+# keeps its required routes, Drupal-owned data, functionality, accessibility,
+# permissions, and editor outcomes.
+#
+# To make a new pack: copy this file, change the id and values, then check
+# contrast with: python3 packs/tools/check.py
+
+format: design-treatment-pack/v1
+id: hot_circuit
+name: Hot Circuit
+category: Electric dark
+summary: >-
+  Zinc-black field, acid-green actions with hot pink strictly decorative, pure white headings.
+  Loud, but the ramp discipline holds.
+fit: >-
+  Creative tech, gaming, agencies and studios that live in dark mode.
+
+# The rules that make the combination work. Hold these relationships if you
+# recolor a clone: keep each role's lightness, the contrast floor, and how
+# many saturated hues exist and which roles they may occupy.
+formula: >-
+  Near-black zinc field + pure white ink + one acid-green primary doing all the pointing + one
+  hot-pink decorative accent; geometric sans display, neutral sans body, monospace meta;
+  steel-gray borders instead of shadows — elevation is a lighter surface.
+
+color:
+  background: "#09090B"   # page field
+  surface: "#18181B"   # cards, panels, raised content
+  surface_alt: "#202024"   # tinted bands, alternating sections
+  ink: "#FFFFFF"   # primary text
+  ink_muted: "#A1A1AA"   # secondary text, captions
+  line: "#3F3F46"   # borders, dividers, rules
+  primary: "#D9F99D"   # main action fill
+  on_primary: "#1A2E05"   # text/icons on primary fills
+  accent: "#FF1D58"   # secondary emphasis; decorative unless it passes 4.5:1 as text
+  inverse_background: "#FAFAFA"   # flipped bands: footers, CTA strips
+  inverse_ink: "#18181B"   # text on the flipped band
+  focus: "#D9F99D"   # focus ring
+  focus_inverse: "#18181B"   # focus ring on inverse_background
+
+type:
+  display:
+    family: "Space Grotesk"
+    stack: "'Space Grotesk', Futura, 'Century Gothic', sans-serif"
+    weight: 700
+    tracking: "-0.02em"
+  body:
+    family: "IBM Plex Sans"
+    stack: "'IBM Plex Sans', 'Segoe UI', Helvetica, sans-serif"
+    weight: 400
+    bold_weight: 600
+  meta:
+    family: "JetBrains Mono"
+    stack: "'JetBrains Mono', 'SF Mono', Consolas, monospace"
+  source: google-fonts
+  scale_px:
+    display: 56
+    h1: 40
+    h2: 28
+    h3: 20
+    body: 15
+    meta: 13
+  kicker:
+    case: none
+    tracking: "0"
+
+shape:
+  radius_px: 8
+  button_radius_px: 8
+  border_width_px: 1
+  card_shadow: "none"
+  button_shadow: "none"
+  note: >-
+    8px corners, restrained steel-gray 1px borders, and no ambient glow. Elevation is a slightly
+    lighter surface, never a shadow.
+
+motion:
+  duration_ms: 180
+  easing: "ease-out"
+  hover: lift
+  reduced_motion: honor
+  note: >-
+    180ms ease-out, cursor-precise. A blinking caret is the only ambient motion allowed.
+
+rhythm:
+  base_unit_px: 8
+  content_width_px: 1140   # starting guidance; treatment and content may reshape it
+  section_gap_px: 96
+  note: >-
+    8px base, 1140px content, 96px sections. Medium density; mono metadata rows keep the rhythm
+    tight.
+
+imagery: >-
+  Terminal captures, architecture diagrams on dark, real dashboards. No stock circuit boards, no
+  glow abuse.
+voice: >-
+  Terse and technical. Exact versions, honest changelogs, failure modes named out loud.
+
+apply:
+  contrast_floor: "ink >= 7:1 on background, surface, and surface_alt; ink_muted >= 4.5:1 on background, surface, and surface_alt; on_primary >= 4.5:1 on primary; inverse_ink >= 4.5:1 on inverse_background; focus roles >= 3:1 on their surfaces; colors below 4.5:1 as text are decorative-only"
+  rules:
+    - >-
+      Let this treatment fully direct the visible expression — color, type, spacing, density,
+      layout, section composition, component styling, imagery treatment, and non-essential
+      motion — overriding conflicting visual defaults from the selected Look. Preserve required
+      routes and information architecture, Drupal-owned data and relationships, recurring-content
+      ownership, functionality and state behavior, accessibility, permissions/workflows, and
+      editor outcomes. Do not replace structured Drupal surfaces with hard-coded markup to make
+      the treatment fit.
+    - >-
+      Map the color roles onto the host theme's token system (theme CSS variables, SDC props,
+      Canvas style options); only create new root custom properties if the host has none.
+    - >-
+      Load the Google Fonts with the listed weights only; the stacks given are the offline
+      fallback.
+    - >-
+      Keep the page to these hues. Tints of these values are acceptable for charts and states;
+      do not introduce new saturated colors.
+    - >-
+      Re-verify after mapping: ink >= 7:1 and ink_muted >= 4.5:1 on background,
+      surface, and surface_alt; on_primary and inverse_ink >= 4.5:1 on their fills; focus and
+      focus_inverse >= 3:1 on the surfaces where they appear. A color below 4.5:1 as text is
+      decorative only. Never carry meaning by color alone.
+    - >-
+      Treat fit as catalog guidance, not project scope. Apply imagery, motion, and voice only to
+      new material when compatible with the brief; never change the site subject, facts, taxonomy,
+      routes, maintained content, or media roles to make the treatment fit.
+    - >-
+      Explicit customer direction overrides the treatment; the treatment overrides the Look's
+      visual defaults; the Look's nonvisual requirements remain binding.

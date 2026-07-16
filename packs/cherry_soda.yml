@@ -1,0 +1,133 @@
+# Cherry Soda — treatment pack, drupal-design-lab
+#
+# Self-contained art direction intended for inclusion in the Design Lab build
+# prompt alongside the chosen Drupal CMS, site template, and recipes. The
+# treatment may strongly reshape the visible expression while the selected Look
+# keeps its required routes, Drupal-owned data, functionality, accessibility,
+# permissions, and editor outcomes.
+#
+# To make a new pack: copy this file, change the id and values, then check
+# contrast with: python3 packs/tools/check.py
+
+format: design-treatment-pack/v1
+id: cherry_soda
+name: Cherry Soda
+category: Retro americana
+summary: >-
+  Cream, cherry red, and retro teal under a fat poster serif: the roadside-americana standard.
+fit: >-
+  Restaurants and diners, breweries, festivals, barbershops, brands built on nostalgia done
+  well.
+
+# The rules that make the combination work. Hold these relationships if you
+# recolor a clone: keep each role's lightness, the contrast floor, and how
+# many saturated hues exist and which roles they may occupy.
+formula: >-
+  Cream field + espresso ink + one cherry red action + one retro teal second; a fat poster serif
+  over a workhorse sans; pill buttons with a chunky underside — printed, never plastic.
+
+color:
+  background: "#FBF3E4"   # page field
+  surface: "#FFFDF6"   # cards, panels, raised content
+  surface_alt: "#F5E8CE"   # tinted bands, alternating sections
+  ink: "#3B2A20"   # primary text
+  ink_muted: "#75604F"   # secondary text, captions
+  line: "#E8D9BE"   # borders, dividers, rules
+  primary: "#B12A25"   # main action fill
+  on_primary: "#FFF6E8"   # text/icons on primary fills
+  accent: "#1F7A78"   # secondary emphasis; decorative unless it passes 4.5:1 as text
+  inverse_background: "#3B2A20"   # flipped bands: footers, CTA strips
+  inverse_ink: "#F8ECD9"   # text on the flipped band
+  focus: "#B12A25"   # focus ring
+  focus_inverse: "#F8ECD9"   # focus ring on inverse_background
+
+type:
+  display:
+    family: "Abril Fatface"
+    stack: "'Abril Fatface', Georgia, 'Times New Roman', serif"
+    weight: 400
+    tracking: "0"
+  body:
+    family: "PT Sans"
+    stack: "'PT Sans', 'Segoe UI', Verdana, sans-serif"
+    weight: 400
+    bold_weight: 700
+  meta: null
+  source: google-fonts
+  scale_px:
+    display: 60
+    h1: 44
+    h2: 30
+    h3: 21
+    body: 17
+    meta: 14
+  kicker:
+    case: upper
+    tracking: "0.14em"
+
+shape:
+  radius_px: 12
+  button_radius_px: 999   # 999 = pill
+  border_width_px: 1
+  card_shadow: "0 3px 0 #E0CBA6"
+  button_shadow: "0 3px 0 #7E1D19"
+  note: >-
+    12px corners, pill buttons with a chunky underside, borders like menu rules. Feels printed,
+    not plastic.
+
+motion:
+  duration_ms: 180
+  easing: "cubic-bezier(0.34, 1.3, 0.64, 1)"
+  hover: lift
+  reduced_motion: honor
+  note: >-
+    180ms with a diner-sign spring on buttons only. Everything else sits still like a laminated
+    menu.
+
+rhythm:
+  base_unit_px: 8
+  content_width_px: 1100   # starting guidance; treatment and content may reshape it
+  section_gap_px: 92
+  note: >-
+    8px base, 1100px content, 92px sections. Medium density; menu-board lists and big centered
+    headlines.
+
+imagery: >-
+  Warm film-toned photography: counters, neon at dusk, plates from above. Real condensation, no
+  staged perfection.
+voice: >-
+  Friendly and confident, a little wry. Menu language: short names, honest descriptions, prices
+  stated proudly.
+
+apply:
+  contrast_floor: "ink >= 7:1 on background, surface, and surface_alt; ink_muted >= 4.5:1 on background, surface, and surface_alt; on_primary >= 4.5:1 on primary; inverse_ink >= 4.5:1 on inverse_background; focus roles >= 3:1 on their surfaces; colors below 4.5:1 as text are decorative-only"
+  rules:
+    - >-
+      Let this treatment fully direct the visible expression — color, type, spacing, density,
+      layout, section composition, component styling, imagery treatment, and non-essential
+      motion — overriding conflicting visual defaults from the selected Look. Preserve required
+      routes and information architecture, Drupal-owned data and relationships, recurring-content
+      ownership, functionality and state behavior, accessibility, permissions/workflows, and
+      editor outcomes. Do not replace structured Drupal surfaces with hard-coded markup to make
+      the treatment fit.
+    - >-
+      Map the color roles onto the host theme's token system (theme CSS variables, SDC props,
+      Canvas style options); only create new root custom properties if the host has none.
+    - >-
+      Load the Google Fonts with the listed weights only; the stacks given are the offline
+      fallback.
+    - >-
+      Keep the page to these hues. Tints of these values are acceptable for charts and states;
+      do not introduce new saturated colors.
+    - >-
+      Re-verify after mapping: ink >= 7:1 and ink_muted >= 4.5:1 on background,
+      surface, and surface_alt; on_primary and inverse_ink >= 4.5:1 on their fills; focus and
+      focus_inverse >= 3:1 on the surfaces where they appear. A color below 4.5:1 as text is
+      decorative only. Never carry meaning by color alone.
+    - >-
+      Treat fit as catalog guidance, not project scope. Apply imagery, motion, and voice only to
+      new material when compatible with the brief; never change the site subject, facts, taxonomy,
+      routes, maintained content, or media roles to make the treatment fit.
+    - >-
+      Explicit customer direction overrides the treatment; the treatment overrides the Look's
+      visual defaults; the Look's nonvisual requirements remain binding.
