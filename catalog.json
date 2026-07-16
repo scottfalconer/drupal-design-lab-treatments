@@ -1,0 +1,294 @@
+{
+  "format": "design-treatment-catalog/v1",
+  "count": 32,
+  "treatments": [
+    {
+      "id": "acid_mono",
+      "name": "Acid Mono",
+      "category": "Mono + neon",
+      "summary": "Fashion's monochrome move: black, white, a single acid accent, and a mono face as display.",
+      "fit": "Fashion and streetwear, music, portfolios, drops — anywhere scarcity is the aesthetic.",
+      "path": "packs/acid_mono.yml",
+      "sha256": "9b6302a4d8d3fda9e8288e6d6f411dc31443e9c47eb44e472e5614596246f32c"
+    },
+    {
+      "id": "atelier",
+      "name": "Atelier",
+      "category": "Refined luxury",
+      "summary": "Ivory, ink, and a whisper of bronze. Tiny letterspaced labels against enormous light serifs; action is ink set in caps; bronze appears on numerals, rules, and hovers, never as a field.",
+      "fit": "Hospitality, fashion, galleries, fine dining, high-end real estate, weddings.",
+      "path": "packs/atelier.yml",
+      "sha256": "0e0b28aab40b37124dedfe37196fd7e3e739642560143a8f77811f9d7a725eda"
+    },
+    {
+      "id": "basel",
+      "name": "Basel",
+      "category": "Swiss modern",
+      "summary": "Black ink on white, one signal red, and a grid that does the talking. Black signs the actions; red is earned.",
+      "fit": "Portfolios, studios, architecture, events, annual reports.",
+      "path": "packs/basel.yml",
+      "sha256": "3260984061897d0b9e5e1c30aad40fec1b68c0cae56dfddfe1709e78d6cdb1f9"
+    },
+    {
+      "id": "blush",
+      "name": "Blush",
+      "category": "Wellness soft",
+      "summary": "Cream field with dusty rose strictly decorative — it cannot carry text — and actions handed to the deep gray-blue ink. Softness without an accessibility bill.",
+      "fit": "Wellness, therapy, spas, personal care.",
+      "path": "packs/blush.yml",
+      "sha256": "fd3c21b3db5724d59776d469883e7876b64b5ffafd9e1e5386e0789b894971c0"
+    },
+    {
+      "id": "broadsheet",
+      "name": "Broadsheet",
+      "category": "Classic editorial",
+      "summary": "The serif-plus-sans pairing every publication knows: Playfair headlines over Source Sans body, ink on paper.",
+      "fit": "Magazines, essays, reviews, newsletters, any site where reading is the product.",
+      "path": "packs/broadsheet.yml",
+      "sha256": "800cc04b15b05eb94852eced859b929b24e55f964bc5703b0a664a4682898976"
+    },
+    {
+      "id": "cherry_soda",
+      "name": "Cherry Soda",
+      "category": "Retro americana",
+      "summary": "Cream, cherry red, and retro teal under a fat poster serif: the roadside-americana standard.",
+      "fit": "Restaurants and diners, breweries, festivals, barbershops, brands built on nostalgia done well.",
+      "path": "packs/cherry_soda.yml",
+      "sha256": "5d029d87be2739c28087ec31f28e1c344fab6bf62fa9a515cac2041e623ff859"
+    },
+    {
+      "id": "civic",
+      "name": "Civic",
+      "category": "Accessible utility",
+      "summary": "Color-safe utility: white field, one AAA action blue used for actions and focus, gold reserved for secondary emphasis, Public Sans in every role. Chosen for legibility, not fashion — and modern because of it.",
+      "fit": "Government and civic services, public utilities, institutional portals, anything where completing the task is the brand.",
+      "path": "packs/civic.yml",
+      "sha256": "7bc3db35a9628d4bedc62760e8be6cd42c72ffe3b0c61ae1d6733d466783ac11"
+    },
+    {
+      "id": "cobalt",
+      "name": "Cobalt",
+      "category": "Quiet product",
+      "summary": "A hotter consumer take on the quiet-product standard: pure white field, royal cobalt at full saturation, midnight ink. The same one-blue discipline, a step louder.",
+      "fit": "Consumer SaaS, product marketing, startups that want energy without clutter.",
+      "path": "packs/cobalt.yml",
+      "sha256": "a004ba37c9482e85412ae0cd8c058c0d6d60d19bc6c3dea0464e96b025a820ae"
+    },
+    {
+      "id": "executive",
+      "name": "Executive",
+      "category": "Corporate authority",
+      "summary": "Fintech authority: ice-gray field, trust-navy actions, a plaque gold as the decorative second. Credibility over friendliness.",
+      "fit": "Fintech, wealth management, insurers, professional services.",
+      "path": "packs/executive.yml",
+      "sha256": "a28489187c9fba1e804826ec0b5464739dfeda29c36eb9b7f478cf999916d8f5"
+    },
+    {
+      "id": "gilded_noir",
+      "name": "Gilded Noir",
+      "category": "Deco luxury",
+      "summary": "Black, gold, and a Deco cap face: the luxury combination that has worked since 1928.",
+      "fit": "Hotels, spirits, jewelry, theaters, restaurants selling an evening rather than a meal.",
+      "path": "packs/gilded_noir.yml",
+      "sha256": "be9530bed1b5e292183705c9645724bff6d6d162b164ac9296899342a8c0f23f"
+    },
+    {
+      "id": "hearth",
+      "name": "Hearth",
+      "category": "Warm editorial",
+      "summary": "Warm paper, soft serifs, and sun-baked accents: espresso ink on cream, paprika pulled redder and darker than the pale-clay default, olive keeping it from full farmhouse.",
+      "fit": "Nonprofits, community organizations, food, education, local business.",
+      "path": "packs/hearth.yml",
+      "sha256": "463593aa6b8851db18bbdc602f328833e61cac22e176846bec0be523c05d72a4"
+    },
+    {
+      "id": "heritage_navy",
+      "name": "Heritage Navy",
+      "category": "Trad heritage",
+      "summary": "Navy, ivory, and brass with Garamond throughout: the heritage standard of colleges and clubs.",
+      "fit": "Universities, law and letters, publishers, clubs, brands that trade on lineage.",
+      "path": "packs/heritage_navy.yml",
+      "sha256": "9dc48986199981c1b54b44c43b578ac801d87ea6328c47418fb9e29383e1216b"
+    },
+    {
+      "id": "hot_circuit",
+      "name": "Hot Circuit",
+      "category": "Electric dark",
+      "summary": "Zinc-black field, acid-green actions with hot pink strictly decorative, pure white headings. Loud, but the ramp discipline holds.",
+      "fit": "Creative tech, gaming, agencies and studios that live in dark mode.",
+      "path": "packs/hot_circuit.yml",
+      "sha256": "bae12ccbc51b81e9b66ee596cce6000e2ef60985569db37d1142bcb9dc921955"
+    },
+    {
+      "id": "meridian",
+      "name": "Meridian",
+      "category": "Institutional trust",
+      "summary": "Navy, serif authority, and disciplined space. A plainspoken sans does the working text; a serious serif holds the headlines; gold appears the way it does on a building plaque — small, occasional, earned.",
+      "fit": "Finance, legal, healthcare systems, government, higher education, B2B services.",
+      "path": "packs/meridian.yml",
+      "sha256": "b55514f030976761816be898db4fbe899dbcbab6eb5fdcdee7b7035e78e8cd95"
+    },
+    {
+      "id": "midnight_terminal",
+      "name": "Midnight Terminal",
+      "category": "Dark tech",
+      "summary": "Dark mode's house style: near-black, one phosphor green, grotesque headings, mono details.",
+      "fit": "Developer tools, infrastructure, security, technical startups that live in dark mode.",
+      "path": "packs/midnight_terminal.yml",
+      "sha256": "29919022f36c8f106f713c671b2b26e8d032804e573021021a6a8d0c836a4b6d"
+    },
+    {
+      "id": "neo_pop",
+      "name": "Neo Pop",
+      "category": "Neo-brutalist",
+      "summary": "Neo-brutalism's signature move: cream paper, fat black borders, hard offset shadows, one loud yellow.",
+      "fit": "Creator tools, marketplaces, youth brands, zines, products that want to feel handmade and loud.",
+      "path": "packs/neo_pop.yml",
+      "sha256": "a920891d02907fa3f025274de247972273c17fa3e3841f95fc8a597d5e58eec3"
+    },
+    {
+      "id": "newsprint",
+      "name": "Newsprint",
+      "category": "News editorial",
+      "summary": "Ink on newsprint with a red pencil: flat paper everywhere, containers drawn in rules, a marker-yellow highlight for selection only, Newsreader carrying display and body under Oswald kickers.",
+      "fit": "News, magazines, newsletters, research organizations, universities, serious blogs.",
+      "path": "packs/newsprint.yml",
+      "sha256": "96d0d56679a7fcbdb6baeeab10e7ec73230e7a4a7816911226dbe7fa44333190"
+    },
+    {
+      "id": "pastille",
+      "name": "Pastille",
+      "category": "Soft care",
+      "summary": "Lavender mist, feather shadows, rounded everything: one variable family in every role, the violet deepened for discipline, mint-teal signaling 'okay' without shouting. Even errors are dusk rose, not alarm red.",
+      "fit": "Health apps, HR and people tools, education, therapy, childcare, consumer fintech.",
+      "path": "packs/pastille.yml",
+      "sha256": "5d62194d6960e0583f72bf93bc8f34f108f798bcb7a8d6c1526f40c3b56b5d33"
+    },
+    {
+      "id": "retro_pop",
+      "name": "Retro Pop",
+      "category": "Retro pop",
+      "summary": "The loudest pack in the catalog: the field itself goes bright yellow, white cards throw hard black shadows, and royal purple carries the action. Black anchors text, borders, and shadows; charcoal is reserved for secondary copy.",
+      "fit": "Campaigns, events, youth retail, drops.",
+      "path": "packs/retro_pop.yml",
+      "sha256": "cee1391e495dde94e3e6e854853b31554426fa56f768d4d9db302e34a37cd8b5"
+    },
+    {
+      "id": "riso",
+      "name": "Riso",
+      "category": "Neo-brutalist print",
+      "summary": "Flat paper, hard black borders, one acid color. Everything flat, everything outlined; chartreuse is a fill and a highlight, never text; press a button and it moves into its own shadow.",
+      "fit": "Festivals, studios, zines, campaigns, streetwear, personal sites.",
+      "path": "packs/riso.yml",
+      "sha256": "fccfb4854488d9463406378a180535f4d6fb2e3aaebbb491c611c2cfad1f2016"
+    },
+    {
+      "id": "seafoam",
+      "name": "Seafoam",
+      "category": "Healthcare calm",
+      "summary": "Pale mint field, deep forest-teal ink instead of harsh black, seafoam actions deepened one step to clear 4.5:1 under white text. Reads calm in patient-facing work.",
+      "fit": "Healthcare, clinics, patient portals, wellness services.",
+      "path": "packs/seafoam.yml",
+      "sha256": "7e3cd59fc3c3212817a93b48e60377e26f0e0f6e2c02fff81ea69d7c0f9cc566"
+    },
+    {
+      "id": "sherbet",
+      "name": "Sherbet",
+      "category": "Candy pop",
+      "summary": "Candy-bright and disciplined: warm milk field, plum-black ink doing double duty as outline, one cobalt action, candy tints rationed to three per view.",
+      "fit": "Consumer apps, food and drink, family and kids brands, events, creators.",
+      "path": "packs/sherbet.yml",
+      "sha256": "267b2ad9be018bc07624b4430c57b22cf016df6019ba792ecd39cd164b41d386"
+    },
+    {
+      "id": "slate",
+      "name": "Slate",
+      "category": "Quiet product",
+      "summary": "The quiet-product standard: a disciplined gray ramp, one working blue, Inter at tight tracking. Executed casually it reads generic; executed deliberately it reads shipped.",
+      "fit": "SaaS product and marketing sites, developer tools, documentation, startups that want to look shipped on day one.",
+      "path": "packs/slate.yml",
+      "sha256": "7d2fe15451779e89c04d8a6930e2dfa7b8be456d758c53b657c0c5af08b40974"
+    },
+    {
+      "id": "soft_serve",
+      "name": "Soft Serve",
+      "category": "Friendly rounded",
+      "summary": "The friendly-rounded standard of consumer apps: lavender pastels, deep indigo ink, Nunito everywhere.",
+      "fit": "Consumer apps, edtech, family and team tools, anything that should feel easy before it feels powerful.",
+      "path": "packs/soft_serve.yml",
+      "sha256": "14aae0dc7603ccf7dcba1838c22b88c78bb9183ea8da6fe40662c5757a257049"
+    },
+    {
+      "id": "soft_studio",
+      "name": "Soft Studio",
+      "category": "Warm minimal",
+      "summary": "The warm-minimal standard: oat surfaces, a light Garamond, tiny tracked caps, and room to breathe.",
+      "fit": "Interiors, photographers, boutique hotels, weddings, lifestyle brands sold on restraint.",
+      "path": "packs/soft_studio.yml",
+      "sha256": "4ea8d3be6f6ae8e5ee9d84e7af5170d1192a93e6e2f03f043b3a4a5782bb5124"
+    },
+    {
+      "id": "southwestern",
+      "name": "Southwestern",
+      "category": "Desert warm",
+      "summary": "High-contrast desert palette: warm sand field, deep forest-teal ink, terracotta action deepened one step to hold 4.5:1 under white button text, the brighter terracotta kept decorative.",
+      "fit": "Hospitality, tourism, regional and food brands with a sense of place.",
+      "path": "packs/southwestern.yml",
+      "sha256": "715b74a8047828b8958d17c6bddf6e93b7a91bb97de9076cb768f7e5efe05ad1"
+    },
+    {
+      "id": "stark",
+      "name": "Stark",
+      "category": "Editorial minimal",
+      "summary": "Gallery minimalism: monochrome plus one acid highlight reserved for hover states and tiny badges; body grays soften to medium ash. The page field stays white, with warmth supplied by the stone-toned alternate surface.",
+      "fit": "Portfolios, galleries, architecture, agencies that let the work do the talking.",
+      "path": "packs/stark.yml",
+      "sha256": "dedcbdd8a23ada75cd33069eb11e944a274f8fd4a149812ea43468a4cba0e531"
+    },
+    {
+      "id": "swiss_classic",
+      "name": "Swiss Classic",
+      "category": "International / Swiss",
+      "summary": "Black on white, one true red, a neo-grotesque, and a visible grid. The foundational modernist standard.",
+      "fit": "Agencies, conferences, architecture, cultural institutions, anyone who wants timeless over trendy.",
+      "path": "packs/swiss_classic.yml",
+      "sha256": "a0b8b436256879f8b9842b5de38c58a7c31f472549fefba929bed8916593befb"
+    },
+    {
+      "id": "terra_sage",
+      "name": "Terra Sage",
+      "category": "Earthy DTC",
+      "summary": "The terracotta-sage-cream palette of modern craft brands, set in DM Serif over DM Sans.",
+      "fit": "Food and home goods, skincare, cafés, wellness, farm-adjacent brands with a story.",
+      "path": "packs/terra_sage.yml",
+      "sha256": "adf1933d973fdbc7d8e2bce3ca102d28db1a4c00cb338fb5746bc15d14450388"
+    },
+    {
+      "id": "trust_blue",
+      "name": "Trust Blue",
+      "category": "Corporate trust",
+      "summary": "The most common corporate palette on the web: dependable blue, cool grays, Montserrat headings over Open Sans body.",
+      "fit": "Banks, insurers, B2B services, healthcare admin, anywhere credibility beats personality.",
+      "path": "packs/trust_blue.yml",
+      "sha256": "388707479f782c4c8328bee2a76a5cb6ee829fdafd60564006bcbe8286cd7fb1"
+    },
+    {
+      "id": "understory",
+      "name": "Understory",
+      "category": "Natural calm",
+      "summary": "Moss, stone, and unbleached paper. The color of the trail, not the postcard of it; one ochre note; texture and light do the work shadows would.",
+      "fit": "Wellness, sustainability, outdoors, rustic hospitality, farms and land trusts.",
+      "path": "packs/understory.yml",
+      "sha256": "18d9699a38dffc34de5d175377bf7dd49220bd1668c5d4a10c9740e92571722b"
+    },
+    {
+      "id": "voltage",
+      "name": "Voltage",
+      "category": "Dark technical",
+      "summary": "Near-black surfaces, electric cyan doing all the pointing, violet confined to the occasional gradient, monospaced details. Built for people who read release notes.",
+      "fit": "Developer tools, SaaS, security, data products.",
+      "path": "packs/voltage.yml",
+      "sha256": "521be7904dd7223f09052b5629c17ef4727533c0ee6a57a072fb9233f3b40b5b"
+    }
+  ]
+}

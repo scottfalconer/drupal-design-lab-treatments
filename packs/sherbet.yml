@@ -1,0 +1,133 @@
+# Sherbet — treatment pack, drupal-design-lab
+#
+# Self-contained art direction intended for inclusion in the Design Lab build
+# prompt alongside the chosen Drupal CMS, site template, and recipes. The
+# treatment may strongly reshape the visible expression while the selected Look
+# keeps its required routes, Drupal-owned data, functionality, accessibility,
+# permissions, and editor outcomes.
+#
+# To make a new pack: copy this file, change the id and values, then check
+# contrast with: python3 packs/tools/check.py
+
+format: design-treatment-pack/v1
+id: sherbet
+name: Sherbet
+category: Candy pop
+summary: >-
+  Candy-bright and disciplined: warm milk field, plum-black ink doing double duty as outline,
+  one cobalt action, candy tints rationed to three per view.
+fit: >-
+  Consumer apps, food and drink, family and kids brands, events, creators.
+
+# The rules that make the combination work. Hold these relationships if you
+# recolor a clone: keep each role's lightness, the contrast floor, and how
+# many saturated hues exist and which roles they may occupy.
+formula: >-
+  Warm-white field + a dark plum-neutral serving as both ink and border + one cool saturated
+  primary + one warm candy accent, with pale tints derived from those roles; chunky expressive
+  display over a friendly geometric sans; pills, visible outlines, sticker shadows.
+
+color:
+  background: "#FFF9F2"   # page field
+  surface: "#FFFFFF"   # cards, panels, raised content
+  surface_alt: "#FFE8D6"   # tinted bands, alternating sections
+  ink: "#2A2140"   # primary text
+  ink_muted: "#6E6486"   # secondary text, captions
+  line: "#2A2140"   # borders, dividers, rules
+  primary: "#3B4FE4"   # main action fill
+  on_primary: "#FFFFFF"   # text/icons on primary fills
+  accent: "#FF6B57"   # secondary emphasis; decorative unless it passes 4.5:1 as text
+  inverse_background: "#3B4FE4"   # flipped bands: footers, CTA strips
+  inverse_ink: "#FFF9F2"   # text on the flipped band
+  focus: "#3B4FE4"   # focus ring
+  focus_inverse: "#FFF9F2"   # focus ring on inverse_background
+
+type:
+  display:
+    family: "Bricolage Grotesque"
+    stack: "'Bricolage Grotesque', 'Segoe UI', Tahoma, sans-serif"
+    weight: 800
+    tracking: "-0.02em"
+  body:
+    family: "DM Sans"
+    stack: "'DM Sans', 'Segoe UI', Helvetica, sans-serif"
+    weight: 400
+    bold_weight: 700
+  meta: null
+  source: google-fonts
+  scale_px:
+    display: 60
+    h1: 44
+    h2: 30
+    h3: 21
+    body: 17
+    meta: 14
+  kicker:
+    case: upper
+    tracking: "0.04em"
+
+shape:
+  radius_px: 20
+  button_radius_px: 999   # 999 = pill
+  border_width_px: 2
+  card_shadow: "5px 5px 0 #2A2140"
+  button_shadow: "none"
+  note: >-
+    Full pills with visible 2px plum outlines; featured cards take a hard sticker shadow in ink.
+    Tinted bands use the peach surface_alt plus pale tints derived from primary and accent; never
+    more than three candy fills in one view.
+
+motion:
+  duration_ms: 200
+  easing: "cubic-bezier(0.34, 1.3, 0.64, 1)"
+  hover: lift
+  reduced_motion: honor
+  note: >-
+    Springy 200ms with slight overshoot; a 2px hover lift. Fully honors reduced motion.
+
+rhythm:
+  base_unit_px: 8
+  content_width_px: 1140   # starting guidance; treatment and content may reshape it
+  section_gap_px: 92
+  note: >-
+    8px base, 1140px content, 92px sections. Generous and upbeat; alternating tinted bands pace
+    the page, touch targets stay big.
+
+imagery: >-
+  Bright photography on tint fields, cut-out subjects, hand-drawn underlines used sparingly.
+  Emoji tolerated in microcopy.
+voice: >-
+  Upbeat, contractions, short sentences. Sounds like a friend, not a mascot.
+
+apply:
+  contrast_floor: "ink >= 7:1 on background, surface, and surface_alt; ink_muted >= 4.5:1 on background, surface, and surface_alt; on_primary >= 4.5:1 on primary; inverse_ink >= 4.5:1 on inverse_background; focus roles >= 3:1 on their surfaces; colors below 4.5:1 as text are decorative-only"
+  rules:
+    - >-
+      Let this treatment fully direct the visible expression — color, type, spacing, density,
+      layout, section composition, component styling, imagery treatment, and non-essential
+      motion — overriding conflicting visual defaults from the selected Look. Preserve required
+      routes and information architecture, Drupal-owned data and relationships, recurring-content
+      ownership, functionality and state behavior, accessibility, permissions/workflows, and
+      editor outcomes. Do not replace structured Drupal surfaces with hard-coded markup to make
+      the treatment fit.
+    - >-
+      Map the color roles onto the host theme's token system (theme CSS variables, SDC props,
+      Canvas style options); only create new root custom properties if the host has none.
+    - >-
+      Load the Google Fonts with the listed weights only; the stacks given are the offline
+      fallback.
+    - >-
+      Keep the page to these hues. Tints of these values are acceptable for charts and states;
+      do not introduce new saturated colors.
+    - >-
+      Re-verify after mapping: ink >= 7:1 and ink_muted >= 4.5:1 on background,
+      surface, and surface_alt; on_primary and inverse_ink >= 4.5:1 on their fills; focus and
+      focus_inverse >= 3:1 on the surfaces where they appear. A color below 4.5:1 as text is
+      decorative only. Never carry meaning by color alone.
+    - >-
+      Treat fit as catalog guidance, not project scope. Apply imagery, motion, and voice only to
+      new material when compatible with the brief; never change the site subject, facts, taxonomy,
+      routes, maintained content, or media roles to make the treatment fit.
+    - >-
+      Explicit customer direction overrides the treatment; the treatment overrides the Look's
+      visual defaults; the Look's nonvisual requirements remain binding.

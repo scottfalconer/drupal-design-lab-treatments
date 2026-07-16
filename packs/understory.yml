@@ -1,0 +1,130 @@
+# Understory — treatment pack, drupal-design-lab
+#
+# Self-contained art direction intended for inclusion in the Design Lab build
+# prompt alongside the chosen Drupal CMS, site template, and recipes. The
+# treatment may strongly reshape the visible expression while the selected Look
+# keeps its required routes, Drupal-owned data, functionality, accessibility,
+# permissions, and editor outcomes.
+#
+# To make a new pack: copy this file, change the id and values, then check
+# contrast with: python3 packs/tools/check.py
+
+format: design-treatment-pack/v1
+id: understory
+name: Understory
+category: Natural calm
+summary: >-
+  Moss, stone, and unbleached paper. The color of the trail, not the postcard of it; one ochre
+  note; texture and light do the work shadows would.
+fit: >-
+  Wellness, sustainability, outdoors, rustic hospitality, farms and land trusts.
+
+# The rules that make the combination work. Hold these relationships if you
+# recolor a clone: keep each role's lightness, the contrast floor, and how
+# many saturated hues exist and which roles they may occupy.
+formula: >-
+  Unbleached warm-neutral field + bark ink + one desaturated green primary + one earth-ochre
+  second; literary serif display over a humanist sans; large soft radius, nearly flat.
+
+color:
+  background: "#F4F1E8"   # page field
+  surface: "#FBFAF4"   # cards, panels, raised content
+  surface_alt: "#E9EBDF"   # tinted bands, alternating sections
+  ink: "#2C2A24"   # primary text
+  ink_muted: "#6C6A5C"   # secondary text, captions
+  line: "#DCD8C8"   # borders, dividers, rules
+  primary: "#47634A"   # main action fill
+  on_primary: "#F6F4EA"   # text/icons on primary fills
+  accent: "#9A6B22"   # secondary emphasis; decorative unless it passes 4.5:1 as text
+  inverse_background: "#222B1E"   # flipped bands: footers, CTA strips
+  inverse_ink: "#EDEBDD"   # text on the flipped band
+  focus: "#47634A"   # focus ring
+  focus_inverse: "#EDEBDD"   # focus ring on inverse_background
+
+type:
+  display:
+    family: "Lora"
+    stack: "'Lora', Georgia, serif"
+    weight: 500
+    tracking: "0"
+  body:
+    family: "Karla"
+    stack: "'Karla', 'Segoe UI', Verdana, sans-serif"
+    weight: 400
+    bold_weight: 700
+  meta: null
+  source: google-fonts
+  scale_px:
+    display: 56
+    h1: 42
+    h2: 30
+    h3: 21
+    body: 17
+    meta: 14
+  kicker:
+    case: upper
+    tracking: "0.05em"
+
+shape:
+  radius_px: 14
+  button_radius_px: 14
+  border_width_px: 1
+  card_shadow: "none"
+  button_shadow: "none"
+  note: >-
+    Radius 14px but calm — softness without blobs. Nearly flat: hairlines and tint shifts
+    instead of shadows. Arched image masks allowed sparingly.
+
+motion:
+  duration_ms: 280
+  easing: "ease"
+  hover: none
+  reduced_motion: honor
+  note: >-
+    Slow 250–300ms ease, small translations. Never bounces.
+
+rhythm:
+  base_unit_px: 8
+  content_width_px: 1120   # starting guidance; treatment and content may reshape it
+  section_gap_px: 100
+  note: >-
+    Slow. Airy sections, tall line-height, unhurried scroll.
+
+imagery: >-
+  Natural light, matte grade, muted saturation; texture close-ups (grain, linen, leaf) over
+  vista clichés.
+voice: >-
+  Calm, sensory, gently second person.
+
+apply:
+  contrast_floor: "ink >= 7:1 on background, surface, and surface_alt; ink_muted >= 4.5:1 on background, surface, and surface_alt; on_primary >= 4.5:1 on primary; inverse_ink >= 4.5:1 on inverse_background; focus roles >= 3:1 on their surfaces; colors below 4.5:1 as text are decorative-only"
+  rules:
+    - >-
+      Let this treatment fully direct the visible expression — color, type, spacing, density,
+      layout, section composition, component styling, imagery treatment, and non-essential
+      motion — overriding conflicting visual defaults from the selected Look. Preserve required
+      routes and information architecture, Drupal-owned data and relationships, recurring-content
+      ownership, functionality and state behavior, accessibility, permissions/workflows, and
+      editor outcomes. Do not replace structured Drupal surfaces with hard-coded markup to make
+      the treatment fit.
+    - >-
+      Map the color roles onto the host theme's token system (theme CSS variables, SDC props,
+      Canvas style options); only create new root custom properties if the host has none.
+    - >-
+      Load the Google Fonts with the listed weights only; the stacks given are the offline
+      fallback.
+    - >-
+      Keep the page to these hues. Tints of these values are acceptable for charts and states;
+      do not introduce new saturated colors.
+    - >-
+      Re-verify after mapping: ink >= 7:1 and ink_muted >= 4.5:1 on background,
+      surface, and surface_alt; on_primary and inverse_ink >= 4.5:1 on their fills; focus and
+      focus_inverse >= 3:1 on the surfaces where they appear. A color below 4.5:1 as text is
+      decorative only. Never carry meaning by color alone.
+    - >-
+      Treat fit as catalog guidance, not project scope. Apply imagery, motion, and voice only to
+      new material when compatible with the brief; never change the site subject, facts, taxonomy,
+      routes, maintained content, or media roles to make the treatment fit.
+    - >-
+      Explicit customer direction overrides the treatment; the treatment overrides the Look's
+      visual defaults; the Look's nonvisual requirements remain binding.
